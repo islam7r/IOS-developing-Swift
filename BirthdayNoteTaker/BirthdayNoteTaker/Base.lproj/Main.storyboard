@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayNoteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-dX-eBR">
+                                <rect key="frame" x="16" y="81" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Kgn-Jy-fGi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzJ-RW-RTn">
+                                <rect key="frame" x="16" y="123" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hjn-jn-90t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC0-fH-EWF">
+                                <rect key="frame" x="16" y="287" width="361" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="e2E-6g-Geg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-sq-IJR">
+                                <rect key="frame" x="16" y="340" width="361" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pOm-rv-QH5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-Tg-p8z">
+                                <rect key="frame" x="53" y="196" width="88" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ksI-su-B03"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="SaveClicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGJ-5P-6jx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jch-0P-eWF">
+                                <rect key="frame" x="251" y="196" width="89" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="jRS-NI-s7G"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="SaveClicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAA-DA-M77"/>
+                                    <action selector="deleteClicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXo-AX-8Wc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hJ1-Tg-p8z" firstAttribute="baseline" secondItem="jch-0P-eWF" secondAttribute="baseline" id="8Ld-ej-rSW"/>
+                            <constraint firstItem="hgA-dX-eBR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="B2d-Ai-mG9"/>
+                            <constraint firstItem="JzJ-RW-RTn" firstAttribute="top" secondItem="hgA-dX-eBR" secondAttribute="bottom" constant="8" id="I1p-aw-G74"/>
+                            <constraint firstItem="hJ1-Tg-p8z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="O8s-ab-WJh"/>
+                            <constraint firstItem="hJ1-Tg-p8z" firstAttribute="top" secondItem="JzJ-RW-RTn" secondAttribute="bottom" constant="39" id="Oj8-wN-4ZN"/>
+                            <constraint firstItem="JzJ-RW-RTn" firstAttribute="trailing" secondItem="yC0-fH-EWF" secondAttribute="trailing" id="VWg-GS-hVi"/>
+                            <constraint firstItem="yC0-fH-EWF" firstAttribute="top" secondItem="hJ1-Tg-p8z" secondAttribute="bottom" constant="38" id="We6-ET-dWp"/>
+                            <constraint firstItem="hJ1-Tg-p8z" firstAttribute="firstBaseline" secondItem="jch-0P-eWF" secondAttribute="firstBaseline" id="ZGs-h2-M7s"/>
+                            <constraint firstItem="yC0-fH-EWF" firstAttribute="leading" secondItem="n3g-sq-IJR" secondAttribute="leading" id="aHv-Iv-L5Q"/>
+                            <constraint firstItem="hgA-dX-eBR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eJo-2U-5J7"/>
+                            <constraint firstItem="n3g-sq-IJR" firstAttribute="top" secondItem="yC0-fH-EWF" secondAttribute="bottom" constant="8" id="i5Q-F1-iRy"/>
+                            <constraint firstItem="hgA-dX-eBR" firstAttribute="trailing" secondItem="JzJ-RW-RTn" secondAttribute="trailing" id="kzx-zD-5Vu"/>
+                            <constraint firstItem="hgA-dX-eBR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lIq-fJ-cEC"/>
+                            <constraint firstItem="yC0-fH-EWF" firstAttribute="trailing" secondItem="n3g-sq-IJR" secondAttribute="trailing" id="s0n-M1-cRa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jch-0P-eWF" secondAttribute="trailing" constant="53" id="s3Y-pC-iZh"/>
+                            <constraint firstItem="hgA-dX-eBR" firstAttribute="leading" secondItem="JzJ-RW-RTn" secondAttribute="leading" id="tfA-C5-DlK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n3g-sq-IJR" secondAttribute="bottom" constant="433" id="ufq-A4-lKN"/>
+                            <constraint firstItem="JzJ-RW-RTn" firstAttribute="leading" secondItem="yC0-fH-EWF" secondAttribute="leading" id="xve-Od-RH3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BirthdayLabel" destination="n3g-sq-IJR" id="VHI-br-5Dl"/>
+                        <outlet property="BirthdayTextField" destination="JzJ-RW-RTn" id="qHZ-zF-iOb"/>
+                        <outlet property="NameLabel" destination="yC0-fH-EWF" id="CYZ-pq-l0l"/>
+                        <outlet property="NameTextField" destination="hgA-dX-eBR" id="LyO-xg-Fmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
