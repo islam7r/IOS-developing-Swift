@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anakampus480x313" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-FJ-CEs">
+                                <rect key="frame" x="51" y="109" width="291" height="165"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ari Kapi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHT-Tq-d69">
+                                <rect key="frame" x="129" y="331" width="135" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="tyU-FD-61X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cHT-Tq-d69" firstAttribute="top" secondItem="dbv-FJ-CEs" secondAttribute="bottom" constant="57" id="60i-Ba-k7M"/>
+                            <constraint firstItem="dbv-FJ-CEs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="FLs-sd-z2h"/>
+                            <constraint firstItem="dbv-FJ-CEs" firstAttribute="centerX" secondItem="cHT-Tq-d69" secondAttribute="centerX" id="mpd-5Z-nvV"/>
+                            <constraint firstItem="dbv-FJ-CEs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMB-Ms-uPX"/>
+                            <constraint firstItem="cHT-Tq-d69" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="pzD-gJ-9Bv"/>
+                            <constraint firstItem="dbv-FJ-CEs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vT6-Rd-5gK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHT-Tq-d69" secondAttribute="bottom" constant="420" id="vgR-Q3-hwY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="dbv-FJ-CEs" id="b5U-Mu-90D"/>
+                        <outlet property="myLabel" destination="cHT-Tq-d69" id="VoF-7G-ytE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="anakampus480x313" width="480" height="313"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
